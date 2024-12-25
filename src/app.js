@@ -41,6 +41,10 @@ app.get("/login", (req, res) => {
     res.render("login");
 });
 
+app.get("*",(req,res)=>{
+    res.render('404');
+});
+
 
 app.post("/register", async (req, res) => 
     {
